@@ -1,12 +1,7 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
-Date of experiment :
-
-
-
-
-
+#Name :KAVI NILAVAN DK
+#Roll no 212223230103
+#Date of experiment :
 ## Aim: To Write and execute ALP on fundamental arithmetic and logical operations
 ## Components required: 8086  emulator 
 ## Theory 
@@ -106,12 +101,35 @@ ret
 ![Screenshot (72)](https://github.com/KavinilavanDK/EXPERIMENT--01-ALP-FOR-8086/assets/144870429/61e6b606-5057-43ff-ba7a-cd30c44f3e63)
 
 ## Multiplication alp 
+```
+org 100h
+mov AL,0C6H;
+
+mov BL,0B4H;
+
+mul BL;
+
+mov [1334H],AX;
+ret 
+```
  ## Output  
 
 
 ## Division alp 
+```
+org 100h
+
+mov AL,0D6H;
+mov BL,0A2H;
+div BL;
+mov [1324H],AX;
+
+ret
+
+```
 
 ## Output  
+![screenshot(65)](https://github.com/KavinilavanDK/EXPERIMENT--01-ALP-FOR-8086/assets/144870429/363608bc-675a-4f2b-b912-1ad95c580184)
 
 
 ## Result :
