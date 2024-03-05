@@ -92,7 +92,7 @@ ret
 org 100h
 mov ax,4444h;
 mov bx,2222h;
-add ax,bx;
+sub ax,bx;
 mov [32b1h],ax;
 ret
 ```
@@ -132,9 +132,48 @@ ret
 ## Output  
 ![screenshot(65)](https://github.com/KavinilavanDK/EXPERIMENT--01-ALP-FOR-8086/assets/144870429/363608bc-675a-4f2b-b912-1ad95c580184)
 
+## Program For Logical Operators
+```
+org 100H
+
+MOV SI,0532H;
+
+MOV AX,0A32H;
+
+MOV BX,0B13H;
+
+OR AX,BX;
+
+MOV [SI],AX;
+
+MOV AX,0A32H;
+
+MOV BX,0B13H;
+
+AND AX,BX;
+
+MOV [SI+2],AX;
+
+MOV AX,0A32H;
+
+MOV BX,0B13H;
+
+XOR AX,BX;
+
+MOV [SI+4],AX;
+
+MOV AX,0A32H;
+
+NOT AX;
+
+MOV [SI+6],AX;
+ret
+```
+## Output
+![screenshot(67)](https://github.com/KavinilavanDK/EXPERIMENT--01-ALP-FOR-8086/assets/144870429/b0bba943-eb46-4701-9e2b-110bad71206a)
 
 ## Result :
- 
+ Thus, a program is executed on ALP for the fundamental arithmetic and logical operations.
 
 
 
